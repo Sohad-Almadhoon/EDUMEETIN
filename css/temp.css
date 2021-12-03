@@ -8,7 +8,7 @@ box-sizing: border-box;
 color: azure;
 }
 body {
-    background-image: url(../images/meetings-page-bg.jpg);
+    background-image: url(images/meetings-page-bg.jpg);
   }
   .sevices , .btn-danger , .upcoming .card ,
 .listcoming , .pricee , .btn
