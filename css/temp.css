@@ -108,7 +108,7 @@ body {
     margin: 0 auto;
   }
   .sevices {
-      background-image: url(/images/service-item-bg.jpg);
+      background-image: url(images/service-item-bg.jpg);
       padding: 45px;
 }
 .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
