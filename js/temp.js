@@ -1,7 +1,6 @@
 $('.owl-service').owlCarousel({
   items: 3,
   loop: true,
-  nav: true,
   dots:false,
   autoplay: true,
   margin:20,
@@ -14,13 +13,13 @@ $('.owl-service').owlCarousel({
     },
     1000: {
       items: 3,
+      nav: true,
     },
   },
 });
 $('.owl-carousel').owlCarousel({
   items: 4,
   loop: true,
-  nav: true,
   autoplay: true,
   margin:10,
   dots:false,
@@ -36,6 +35,7 @@ $('.owl-carousel').owlCarousel({
     },
     1000: {
       items: 4,
+      nav: true,
     },
   },
 });
