@@ -1,22 +1,22 @@
 let num = document.querySelectorAll(".num h4");
 let section = document.querySelector("#numbers");
-let check = false;
+let checked =false;
 window.onscroll = () => {
     if (window.scrollY > section.offsetTop) {
-        if (!check) {
-            num.forEach(el => {
-                let target = el.dataset.target;
-                let count = setInterval(() => {
-                    el.textContent++;
-                    if (el.textContent == target)
-                        clearInterval(count);
-                }
-                    , 1000 / target);
-                check = true;
-            })
-        }
+      if (!checked)
+        num.forEach(el => {
+          let goal = 0;
+          let target = el.dataset.target;
+          const count = setInterval(() => {
+            +target >= 1000 ? (goal += 2.5) : goal++;
+            el.textContent = Math.trunc(goal);
+            if (goal >= +target) 
+            clearInterval(count);
+          }, 4000 / target);
+          checked = true;
+        });
     }
-}
+  };
 // NavBar
 let navbar = document.querySelector(".navbar");
 let navbarBrand = document.querySelector(".navbar-brand h2");
@@ -33,8 +33,13 @@ let scroll = addEventListener("scroll", () => {
         navLink.forEach(el => el.classList.remove("black"))
     }
 })
-
-
-
-
-
+// Scroll
+let arrow = document.querySelector(".arrow");
+ scroll = addEventListener("scroll", () => {
+    if (scrollY > 2000) {
+        arrow.classList.remove("hidden");
+    }
+    else {
+        arrow.classList.add("hidden");
+    }
+})
