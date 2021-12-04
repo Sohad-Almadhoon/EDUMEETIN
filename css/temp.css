@@ -1,4 +1,7 @@
 /* Global Attributes */
+html { 
+    scroll-behavior: smooth; 
+  }
 *{
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
@@ -27,9 +30,22 @@ body {
  #owl-demo span{
     font-weight: bold;
  } 
+ .arrow{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 999999;
+ }
+ .arrow i{
+    font-size: 45px;
+    color: #f5a425;
+ }
 /* HEADER */
 .navbar-toggler .navbar-toggler-icon{
   color: #1f272b;
+}
+.header {
+    min-height: 80px;
 }
 #header .video ,#header .overlay{ 
     bottom: 0;
@@ -47,11 +63,21 @@ body {
 }
 #header .header-bar{
     background-color: #1f272b;
-    padding: 1% 5%;
     transition: all .8s ease-in-out ;
+    height: 90px;
+}
+.navbar {
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
 }
  .bar , .last{
     color: #f5a425 !important;
+}
+.social {
+    margin-bottom: 0;
 }
 .social li  i , .btn-danger ,.btn{
     padding: 10px;
@@ -97,9 +123,38 @@ body {
 .dropdown-item:hover{
     padding-left: 12px;
 }
+.cross{
+    width: 50px;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+}
+.cross::before{
+    content: "";
+    position: absolute;
+    top:10px;
+    right: 4px;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+}
+.cross::after{
+    content: "";
+    position: absolute;
+    bottom:10px;
+    right: 4px;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+}
+/* .navbar-nav{
+    background-color: #f7f7f7;
 
+} */
+.navbar-nav .nav-link{
+    color: #000;
+}
 /* CAROUSEL */
-
 .owl-service div h4 ,.owl-service div p{
     color: #000;
 }
@@ -160,6 +215,7 @@ body {
         margin-bottom: 25px;
         font-size: 15px;
         color: #fff;
+        white-space: unset
     }
 .upcoming .pricee{
         position: absolute;
@@ -221,6 +277,10 @@ body {
   .carousel2 , .thirdSection{
   padding-top: 7%; 
   padding-bottom: 7%; 
+  }
+  .carousel2 .row{
+      margin-left: 0;
+      margin-right:0;
   }
   .carousel2  h2{
       font-size: 22px;
@@ -354,7 +414,6 @@ form{
     left: 0;
     right: 0;
     top:0;
-    transform:translateY(-5px);
 }
 
 .black{
@@ -362,4 +421,7 @@ form{
 }
 .background{
     background-color:#fff;
+}
+.hidden{
+    display: none;
 }
