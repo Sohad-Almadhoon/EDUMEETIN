@@ -1,7 +1,5 @@
 /* Global Attributes */
-html { 
-    scroll-behavior: smooth; 
-  }
+html {scroll-behavior: smooth;}  
 *{
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
@@ -10,18 +8,12 @@ padding: 0;
 box-sizing: border-box;
 color: azure;
 }
-body {
-    background-image: url(../images/meetings-page-bg.jpg);
-  }
+body { background-image: url(../images/meetings-page-bg.jpg);}
   .sevices , .btn-danger , .upcoming .card ,
 .listcoming , .pricee , .btn
 .num-one  iframe ,  .two-1 , .two-2 , .two-3 ,
- .two-4 , #form .contact , #form form{
-    border-radius: 20px;
-  }
-  .num-one  iframe {
-    max-width: 100%;
-  }
+ .two-4 , #form .contact , #form form{ border-radius: 20px;}
+  .num-one  iframe {max-width: 100%;}
   .btn , #form textarea , #form input {
     font-weight: 500;
   }
@@ -30,8 +22,7 @@ body {
  #owl-demo span{
     font-weight: bold;
  } 
-
-.arrow{
+ .arrow{
     position: fixed;
     bottom: 60px;
     right: 30px;
@@ -53,7 +44,7 @@ body {
     .arrow i:hover , .social li  i:hover{
         color: rgb(161, 44, 47);
     }
-.arrow i{
+ .arrow i{
     font-size: 45px;
     color: #f5a425;
  }
@@ -64,14 +55,16 @@ body {
 .header {
     min-height: 80px;
 }
+
 #header .video ,#header .overlay{ 
     bottom: 0;
     right: 0; 
+    top:90px;
     position: absolute;
     min-width: 100%;
-    min-height: 120vh;
-    max-width: 100%;
+    height :100vh;
     max-height: 120vh;
+    max-width: 100%;
     object-fit: cover;
     z-index: -2;
 }
@@ -182,12 +175,16 @@ body {
     width: 100%;
 }
 /* CAROUSEL */
+.services{
+    transform: translateY(-25%);
+    padding-top: 100px;
+}
 .owl-service div h4 ,.owl-service div p{
     color: #000;
 }
 .service-icon {
     width: 48px;
-    margin: 0 auto;
+    margin: 5px auto;
   }
   .sevices {
       background-image: url(../images/service-item-bg.jpg);
@@ -365,7 +362,7 @@ position: absolute;
     margin-top: 40px;
     padding: 25px 30px 35px 30px;
 }
-.num-two h4{
+.num-two h4 {
     color: #f5a425;
     font-size: 35px;
 }
@@ -467,9 +464,37 @@ form{
     color: #000;
 }
 .navbar{
-width: 100%;
-background-color: #fff;}
+width: 85%;
+margin: 0 auto;
+background-color: #fff;
+
+}
 .navbar-brand h2{
     color: #1f272b;
+    font-size: 25px;
+    padding-top: 10px;
 }
+.nav-parent{
+    width: 100%;
+    background-color: white;
+    height: 90px;
+}
+.sticky{
+    width: 100% !important
+}
+.wow{
+    animation: none;
+    -webkit-animation: none;
+}
+.services{ transform:translateY(-10%) ;
+}
+}
+@media(max-width: 1300px) {
+    button.owl-prev {
+        left: -25px;
+    }
+
+    button.owl-next {
+        right: -25px;
+    }
 }
