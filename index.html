@@ -11,14 +11,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500&display=swap"
     rel="stylesheet">
+   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.js">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/temp.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="/css/temp.css">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.theme.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.css">
   <title>EDU MEETING</title>
@@ -48,7 +49,7 @@
   </div>
 
   <div class="header pt-0">
-
+    <div class="nav-parent">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -95,9 +96,10 @@
         </div>
       </div>
     </nav>
-    <div class="heading">
+  </div>
+    <div class="heading mt-5">
       <div class="container">
-        <span class="d-block mt-5">HELLO STUDENTS</span>
+        <span class="d-block mt-4">HELLO STUDENTS</span>
         <h1 class="mt-4 mb-4">WELCOME TO EDUCATION</h1>
         <p>This is an edu meeting HTML CSS template provided by <a href="#">TemplateMo website.</a>
           This is a Bootstrap v5.1.3 layout.
@@ -220,7 +222,7 @@
       <div class="col-lg-8 cards">
         <div class="row">
           <div class="col-lg-6 ">
-            <div class="card">
+            <div class="card wow slideInLeft">
               <span class="pricee">22.00$</span>
               <img src="images/meeting-01.jpg" alt="">
               <div class="content">
@@ -235,7 +237,7 @@
                       </span>
                     </div>
                   </div>
-                  <div class="col-9">
+                  <div class="col-9 ">
                     <div class="note">
                       <h4>New Lecturers Meeting</h4>
                       <p> Morbi in libero blandit lectus
@@ -248,7 +250,7 @@
           </div>
           <!--CARD 2 -->
           <div class="col-lg-6 ">
-            <div class="card">
+            <div class="card wow slideInRight">
               <span class="pricee">36.00$</span>
               <img src="images/meeting-02.jpg" alt="">
               <div class="content">
@@ -276,7 +278,7 @@
           </div>
           <!-- CARD 3 -->
           <div class="col-lg-6 ">
-            <div class="card">
+            <div class="card wow slideInUp">
               <span class="pricee">$14.00</span>
               <img src="images/meeting-03.jpg" alt="">
               <div class="content">
@@ -301,7 +303,7 @@
           <!-- CARD 4 -->
 
           <div class="col-lg-6 ">
-            <div class="card">
+            <div class="card wow slideInUp">
               <span class="pricee">$48.00</span>
               <img src="images/meeting-04.jpg" alt="">
               <div class="content">
@@ -333,7 +335,7 @@
 <section class="thirdSection">
   <div class="container">
     <div class="row">
-      <div class="section3-1 col-md-6">
+      <div class="section3-1 col-md-6 wow slideInLeft">
         <div class="one">
           <h3>APPLY FOR BACHELOR DEGREE </h3>
           <p>You are allowed to use this edu meeting CSS template for your school or university or business. You can
@@ -347,7 +349,7 @@
           <a href="" class="btn btn-warning">Join Us Now !</a>
         </div>
       </div>
-      <div class="section3-2 col-md-6 align-self-center">
+      <div class="section3-2 col-md-6 align-self-center wow slideInRight">
         <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
@@ -605,7 +607,7 @@
 <section id="form" class="pb-5 pt-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-9 align-self-center">
+      <div class="col-lg-9 align-self-center  wow slideInLeft">
         <div class="row">
           <div class="col-lg-12 mb-4 ">
             <form action="" method="post">
@@ -646,7 +648,7 @@
         </div>
       </div>
       <div class="col-lg-3">
-        <div class="contact">
+        <div class="contact wow slideInRight">
           <ul class="list-unstyled">
             <li>
               <span>Phone Number</span>
@@ -685,6 +687,10 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/temp.js"></script>
 <script src="js/ext.js"></script>
+<script src="js/wow.js"></script>
+<script>
+  new WOW().init();
+  </script>
 </body>
 
 </html>
