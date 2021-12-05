@@ -8,6 +8,9 @@ padding: 0;
 box-sizing: border-box;
 color: azure;
 }
+#form , .upcoming , .thirdSection{
+    overflow: hidden;
+}
 body { background-image: url(../images/meetings-page-bg.jpg);}
   .sevices , .btn-danger , .upcoming .card ,
 .listcoming , .pricee , .btn
