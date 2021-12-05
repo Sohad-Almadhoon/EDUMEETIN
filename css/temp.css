@@ -30,16 +30,29 @@ body {
  #owl-demo span{
     font-weight: bold;
  } 
- .arrow{
+
+.arrow{
     position: fixed;
-    bottom: 30px;
-    right: 50px;
+    bottom: 60px;
+    right: 30px;
     z-index: 999999;
- }
- .arrow i{
-    font-size: 45px;
-    color: #f5a425;
- }
+    animation: Top infinite 3.5s;
+    -webkit-animation: Top infinite 3.5s;
+}
+    @keyframes Top {
+        0%{
+            transform: translateY(10px);
+        }
+        50%{
+            transform: translateY(35px);
+}
+        100%{
+          transform: translateY(10px);
+} 
+    }
+    .arrow i:hover , .social li  i:hover{
+        color: rgb(161, 44, 47);
+    }
 /* HEADER */
 .navbar-toggler .navbar-toggler-icon{
   color: #1f272b;
