@@ -12,7 +12,7 @@ window.onscroll = () => {
             el.textContent = Math.trunc(goal);
             if (goal >= +target) 
             clearInterval(count);
-          }, 4000 / target);
+          }, 5500/ target);
           checked = true;
         });
     }
