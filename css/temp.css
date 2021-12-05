@@ -53,6 +53,10 @@ body {
     .arrow i:hover , .social li  i:hover{
         color: rgb(161, 44, 47);
     }
+.arrow i{
+    font-size: 45px;
+    color: #f5a425;
+ }
 /* HEADER */
 .navbar-toggler .navbar-toggler-icon{
   color: #1f272b;
